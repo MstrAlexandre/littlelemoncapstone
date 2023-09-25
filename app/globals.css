@@ -18,9 +18,10 @@
 
 nav, ul {
   display: flex;
-  padding: 20%;
+  padding: 0 20%;
 }
 
-ul {
+ul, li {
   justify-content: space-between;
+  column-gap: 4px;
 }
