@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "public/Logo.svg";
 
 export default function Header() {
   return (
     <nav>
-      <Image src="/public/Logo.svg" alt="logo" width={100} height={100} />
+      <Image src={Logo} alt="logo" />
     </nav>
   );
 }
