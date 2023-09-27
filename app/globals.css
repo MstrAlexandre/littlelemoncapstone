@@ -22,7 +22,7 @@
 
 nav, ul {
   display: flex;
-  padding: 0 15%;
+  padding: 2% 20%;
   flex-wrap: wrap;
 }
 
@@ -47,7 +47,7 @@ li:hover {
   font-family: Markazi Text;
 }
 
-.card-title {
+.cardTitle {
   font-size: 18pt;
   font-weight: bold;
   font-family: Markazi Text;
@@ -73,7 +73,34 @@ p {
 }
 
 footer {
-  padding-top: 2%;
-  padding-left: 15%;
-  background-color: var(--green);
+  padding: 2% 20%;
+ background-color: var(--green);
+}
+
+button {
+  background-color: var(--yellow);
+  color: var(--green);
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.highlights {
+  padding: 4% 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 16px 16px 0 0;
+  max-width: 30%;
+}
+
+.cardImage{
+  border-radius: 16px 16px 0 0;
+}
+.cardContent {
+  padding: 0 2%;
+  background-color: lightgray;
+  overflow-wrap: break-word;
 }
