@@ -100,7 +100,8 @@ button {
   border-radius: 16px 16px 0 0;
 }
 .cardContent {
-  padding: 0 2%;
+  padding: 4% 6%;
   background-color: lightgray;
   overflow-wrap: break-word;
+
 }

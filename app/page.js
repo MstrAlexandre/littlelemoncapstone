@@ -31,7 +31,7 @@ export default function Home() {
       <section className="highlights">
         <article className="card">
           <Image
-            className="cardImage h-44 pt-6"
+            className="cardImage h-44 pt-9 w-full"
             src={Bruchetta}
             alt="Bruschetta"
           />
@@ -43,11 +43,12 @@ export default function Home() {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
+            <button className="mt-4"> Order for Delivery</button>
           </div>
         </article>
         <article className="card">
           <Image
-            className="cardImage h-42"
+            className="cardImage h-44"
             src={LemonDessert}
             alt="Lemon Dessert"
           />
@@ -59,6 +60,7 @@ export default function Home() {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
+            <button className="mt-4"> Order for Delivery</button>
           </div>
         </article>
         <article className="card">
@@ -75,6 +77,7 @@ export default function Home() {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
+            <button className="mt-4"> Order for Delivery</button>
           </div>
         </article>
       </section>
