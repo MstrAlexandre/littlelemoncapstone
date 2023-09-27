@@ -4,7 +4,7 @@ import Restaurant from "public/restaurant.jpg";
 export default function Home() {
   return (
     <main>
-      <div className="hero">
+      <section className="hero">
         <div>
           <h3 className="lead">Little Lemon</h3>
           <p>Chicago</p>
@@ -18,8 +18,12 @@ export default function Home() {
             id="heropic"
           />
         </div>
-      </div>
-      <h1>Hello World, this will soon be the home page content</h1>
+      </section>
+      <section className="highlights">
+        <h1>Here we will show off some menu items</h1>
+      </section>
+      <section className="testimonials">Testimonials go here</section>
+      <section className="about">The About Section</section>
     </main>
   );
 }

@@ -71,3 +71,9 @@ p {
 #heropic {
   padding: 5% 0;
 }
+
+footer {
+  padding-top: 2%;
+  padding-left: 15%;
+  background-color: var(--green);
+}
