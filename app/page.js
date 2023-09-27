@@ -7,15 +7,15 @@ import GreekSalad from "public/greek salad.jpg";
 export default function Home() {
   return (
     <main>
-      <section className="hero">
+      <section className="hero flex flex-wrap">
         <div>
-          <h2 className="subtitle">Little Lemon</h2>
+          <h2 className="subtitle pt-10">Little Lemon</h2>
           <h3 className="lead">Chicago</h3>
           <p>
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <button className="mt-12">Reserve a Table</button>
+          <button className="mt-12 mb-12">Reserve a Table</button>
         </div>
         <div>
           <Image
@@ -23,8 +23,9 @@ export default function Home() {
             alt="A chef carrying a plate of food"
             id="heropic"
             // style={{ width: "auto", height: "50%" }}
-            height={500}
-            width={500}
+            // height={500}
+            // width={500}
+            className="max-h-96 w-auto"
           />
         </div>
       </section>
