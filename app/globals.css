@@ -11,6 +11,11 @@
   --yellow: #F4CE14;
 }
 
+@media (max-width: 428px) {
+  .card {
+    width: 90%;
+  }
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -95,7 +100,7 @@ button {
 .card {
   border: 1px solid black;
   border-radius: 16px 16px 0 0;
-
+  max-width: 30%;
 }
 
 .cardImage{

@@ -22,20 +22,13 @@ export default function Home() {
             src={RestaurantFood}
             alt="A chef carrying a plate of food"
             id="heropic"
-            // style={{ width: "auto", height: "50%" }}
-            // height={500}
-            // width={500}
             className="max-h-96 w-auto"
           />
         </div>
       </section>
       <section className="highlights">
         <article className="card">
-          <Image
-            className="cardImage h-44 pt-9 w-full"
-            src={Bruchetta}
-            alt="Bruschetta"
-          />
+          <Image className="cardImage" src={Bruchetta} alt="Bruschetta" />
           <div class="cardContent">
             <h4 className="cardTitle">Bruschetta</h4>
             <p>
@@ -48,11 +41,7 @@ export default function Home() {
           </div>
         </article>
         <article className="card">
-          <Image
-            className="cardImage h-44"
-            src={LemonDessert}
-            alt="Lemon Dessert"
-          />
+          <Image className="cardImage" src={LemonDessert} alt="Lemon Dessert" />
           <div class="cardContent">
             <h4 className="cardTitle">Lemon Dessert</h4>
             <p>
@@ -65,11 +54,7 @@ export default function Home() {
           </div>
         </article>
         <article className="card">
-          <Image
-            className="cardImage h-44"
-            src={GreekSalad}
-            alt="Greek Salad"
-          />
+          <Image className="cardImage" src={GreekSalad} alt="Greek Salad" />
           <div class="cardContent">
             <h4 className="cardTitle">Greek Salad</h4>
             <p>
