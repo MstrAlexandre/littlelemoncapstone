@@ -29,8 +29,8 @@ export default function Home() {
       <section className="highlights">
         <article className="card">
           <Image className="cardImage" src={Bruchetta} alt="Bruschetta" />
-          <div class="cardContent">
-            <h4 className="cardTitle">Bruschetta</h4>
+          <div className="cardContent">
+            <h4 className="cardTitle text-center">Bruschetta</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -42,8 +42,8 @@ export default function Home() {
         </article>
         <article className="card">
           <Image className="cardImage" src={LemonDessert} alt="Lemon Dessert" />
-          <div class="cardContent">
-            <h4 className="cardTitle">Lemon Dessert</h4>
+          <div className="cardContent">
+            <h4 className="cardTitle text-center max-w-84">Lemon Dessert</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -55,8 +55,8 @@ export default function Home() {
         </article>
         <article className="card">
           <Image className="cardImage" src={GreekSalad} alt="Greek Salad" />
-          <div class="cardContent">
-            <h4 className="cardTitle">Greek Salad</h4>
+          <div className="cardContent">
+            <h4 className="cardTitle text-center max-w-84">Greek Salad</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -67,7 +67,32 @@ export default function Home() {
           </div>
         </article>
       </section>
-      <section className="testimonials">Testimonials go here</section>
+      <section className="testimonials grid grid-cols-3 gap-y-4 pl-4">
+        <article className="reviews">
+          <h5 className="reviewContent  lead">"Say nice things!"</h5>
+          <p className="reviewer">-Someone Cool</p>
+        </article>
+        <article className="reviews">
+          <h5 className="reviewContent lead">"Food is good!"</h5>
+          <p className="reviewer">-Human Being</p>
+        </article>
+        <article className="reviews">
+          <h5 className="reviewContent lead">"Me likey!"</h5>
+          <p className="reviewer">-Adult Person</p>
+        </article>
+        <article className="reviews">
+          <h5 className="reviewContent lead">"When you're here, it's like we're related"</h5>
+          <p className="reviewer">-Beard Face</p>
+        </article>
+        <article className="reviews">
+          <h5 className="reviewContent lead">"Now am become death, destroyer of worlds."</h5>
+          <p className="reviewer">-Cthulhu</p>
+        </article>
+        <article className="reviews">
+          <h5 className="reviewContent lead">"Lemonaaadddeeee!!!!"</h5>
+          <p className="reviewer">-Fish</p>
+        </article>
+      </section>
       <section className="about">The About Section</section>
     </main>
   );

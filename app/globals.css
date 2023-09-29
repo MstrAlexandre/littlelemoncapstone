@@ -9,13 +9,15 @@
   --background-end-rgb: 255, 255, 255;
   --green: #495E57;
   --yellow: #F4CE14;
+  --gray: #EDEFEE;
 }
 
-@media (max-width: 428px) {
+/* @media (max-width: 428px) {
   .card {
     width: 90%;
   }
 }
+*/
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -100,7 +102,7 @@ button {
 .card {
   border: 1px solid black;
   border-radius: 16px 16px 0 0;
-  max-width: 30%;
+  max-width: 385px;
 }
 
 .cardImage{
@@ -108,7 +110,7 @@ button {
 }
 .cardContent {
   padding: 4% 6%;
-  background-color: lightgray;
+  background-color: var(--gray);
   overflow-wrap: break-word;
 
 }
