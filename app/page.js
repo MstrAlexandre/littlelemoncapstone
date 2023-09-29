@@ -3,6 +3,7 @@ import Bruchetta from "public/bruchetta.svg";
 import RestaurantFood from "public/restauranfood.jpg";
 import LemonDessert from "public/lemon dessert.jpg";
 import GreekSalad from "public/greek salad.jpg";
+import UserPic from "public/user.svg";
 
 export default function Home() {
   return (
@@ -67,29 +68,47 @@ export default function Home() {
           </div>
         </article>
       </section>
-      <section className="testimonials grid grid-cols-3 gap-y-4 pl-4">
+      <section className="testimonials grid grid-cols-3 gap-x-2 place-content-center gap-y-4 justify-center content-center">
         <article className="reviews">
+        <div className="imgContainer">
+          <Image src={UserPic} alt="User Pic" className="userPic"/>
+          </div>
           <h5 className="reviewContent  lead">"Say nice things!"</h5>
           <p className="reviewer">-Someone Cool</p>
         </article>
         <article className="reviews">
+        <div className="imgContainer">
+          <Image src={UserPic} alt="User Pic" className="userPic"/>
+          </div>
           <h5 className="reviewContent lead">"Food is good!"</h5>
           <p className="reviewer">-Human Being</p>
         </article>
         <article className="reviews">
+        <div className="imgContainer">
+          <Image src={UserPic} alt="User Pic" className="userPic"/>
+          </div>
           <h5 className="reviewContent lead">"Me likey!"</h5>
           <p className="reviewer">-Adult Person</p>
         </article>
         <article className="reviews">
+        <div className="imgContainer">
+          <Image src={UserPic} alt="User Pic" className="userPic"/>
+          </div>
           <h5 className="reviewContent lead">"When you're here, it's like we're related"</h5>
           <p className="reviewer">-Beard Face</p>
         </article>
         <article className="reviews">
+          <div className="imgContainer">
+          <Image src={UserPic} alt="User Pic" className="userPic"/>
+          </div>
           <h5 className="reviewContent lead">"Now am become death, destroyer of worlds."</h5>
           <p className="reviewer">-Cthulhu</p>
         </article>
         <article className="reviews">
-          <h5 className="reviewContent lead">"Lemonaaadddeeee!!!!"</h5>
+        <div className="imgContainer">
+          <Image src={UserPic} alt="User Pic" className="userPic"/>
+          </div>
+          <h5 className="reviewContent lead">"Lemonaaddee!!"</h5>
           <p className="reviewer">-Fish</p>
         </article>
       </section>

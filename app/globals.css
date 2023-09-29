@@ -10,6 +10,7 @@
   --green: #495E57;
   --yellow: #F4CE14;
   --gray: #EDEFEE;
+  --darkgray: #333333;
 }
 
 /* @media (max-width: 428px) {
@@ -112,5 +113,39 @@ button {
   padding: 4% 6%;
   background-color: var(--gray);
   overflow-wrap: break-word;
+
+}
+
+.reviews {
+  border: 2px double var(--darkgray);
+  overflow-wrap: break-word;
+  border-radius: 8px;
+  background-color: var(--gray);
+  max-width: 200px;
+}
+
+.reviewContent {
+  padding: 2% 6%;
+  text-align: center;
+}
+
+.reviewer {
+  text-align: right;
+  padding-right: 6%;
+  font-size: 14pt;
+}
+
+.testimonials {
+  padding: 3% 15%;
+  background-color: var(--green);
+}
+
+.imgContainer {
+  max-width: 200px;
+}
+
+.userPic {
+  width: 100%;
+  height: auto;
 
 }
