@@ -263,7 +263,7 @@ button {
   max-height: 50px;
 }
 
-.reservations {
+.reservationbanner {
   padding: 4% 20%;
   background-color: var(--green);
   color: var(--yellow)
