@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Markazi+Text:wght@400;500;700&display=swap");
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -9,63 +10,67 @@
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
- 
+
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
- 
+
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
- 
+
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
- 
+
     --accent: 0 0% 96.1%;
     --accent-foreground: 0 0% 9%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
- 
+
     --radius: 0.5rem;
+    --green: #495e57;
+    --yellow: #f4ce14;
+    --gray: #edefee;
+    --darkgray: #333333;
   }
- 
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
- 
+
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
- 
+
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
- 
+
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 9%;
- 
+
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
- 
+
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
- 
+
     --accent: 0 0% 14.9%;
     --accent-foreground: 0 0% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
- 
+
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
@@ -73,4 +78,193 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+
+li:hover {
+  text-decoration: underline;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: "Markazi Text";
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Markazi Text";
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Markazi Text";
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 65ch;
+  font-family: "Karla", sans-serif;
+}
+
+.hero {
+  background-color: var(--green);
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--yellow);
+}
+
+.heroContent {
+  max-width: 30%;
+}
+
+#heropic {
+  padding: 5% 0;
+}
+
+footer {
+  padding: 2% 20%;
+  background-color: var(--green);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+button {
+  background-color: var(--yellow);
+  color: var(--green);
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.highlights {
+  padding: 4% 15%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 16px 16px 0 0;
+  max-width: 250px;
+  background-color: var(--gray);
+}
+
+.cardImage {
+  border-radius: 16px 16px 0 0;
+}
+.cardContent {
+  padding: 4% 6%;
+  overflow-wrap: break-word;
+}
+
+.bgGray {
+  background-color: var(--gray);
+}
+.reviewHeading{
+  background-color: var(--green);
+  color: var(--yellow);
+  padding-left: 22%;
+}
+.reviews {
+  border: 2px double var(--darkgray);
+  overflow-wrap: break-word;
+  border-radius: 8px;
+  background-color: white;
+  width: 200px;
+  height: 225px;
+}
+
+.reviewContent {
+  padding: 2% 6%;
+  text-align: center;
+}
+
+.reviewer {
+  text-align: right;
+  padding-right: 6%;
+  font-size: 14px;
+}
+
+.testimonials {
+  padding: 3% 17%;
+  background-color: var(--green);
+}
+
+.imgContainer {
+  max-width: auto;
+  max-height: 100px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 33%;
+  padding-top: 6%;
+}
+
+.userPic {
+  width: 50%;
+  max-height: 100px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.about {
+  padding: 4% 20%;
+  height: auto;
+}
+
+.aboutText {
+  max-width: 50%;
+  padding: 10% 2%;
+}
+
+.pictureBox {
+  position: relative;
+  border: 1px solid black;
+  height: auto;
+}
+
+.chefPics {
+  padding: 2%;
+  position: relative;
+  min-height: 600px;
+}
+
+#front {
+  z-index: 0;
+  padding-left: 45%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#back {
+  z-index: -1;
+  padding-right: 25%;
+  position: relative;
+  bottom: 0;
+}
+
+#lemon {
+  max-height: 165px;
+}
+
+.socialpic {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.reservations {
+  padding: 4% 20%;
+  background-color: var(--green);
+  color: var(--yellow)
 }

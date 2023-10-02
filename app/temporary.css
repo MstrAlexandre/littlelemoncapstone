@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Markazi+Text:wght@400;500;700&display=swap');
+
+nav, ul {
+display: flex;
+padding: 2% 20%;
+flex-wrap: wrap;
+}
+
+ul, li {
+justify-content: space-between;
+column-gap: 10px;
+}
+
+li:hover {
+text-decoration: underline;
+}
+
+.subtitle {
+font-weight: normal;
+font-size: 40pt;
+font-family: Markazi Text;
+}
+
+.lead {
+font-size: 18pt;
+font-weight: medium;
+font-family: Markazi Text;
+}
+
+.cardTitle {
+font-size: 18pt;
+font-weight: bold;
+font-family: Markazi Text;
+}
+
+p {
+font-size: 16pt;
+font-weight: normal;
+line-height: 1.5;
+max-width: 65ch;
+font-family: 'Karla', sans-serif;
+}
+
+.hero {
+    background-color: var(--green);
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--yellow);
+  }
+  
+  #heropic {
+    padding: 5% 0;
+  }
+  
+  footer {
+    padding: 2% 20%;
+   background-color: var(--green);
+  }
+  
+  button {
+    background-color: var(--yellow);
+    color: var(--green);
+    border-radius: 16px;
+    padding: 8px;
+  }
+  
+  .highlights {
+    padding: 4% 15%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    border: 1px solid black;
+    border-radius: 16px 16px 0 0;
+    max-width: 385px;
+  }
+  
+  .cardImage{
+    border-radius: 16px 16px 0 0;
+  }
+  .cardContent {
+    padding: 4% 6%;
+    background-color: var(--gray);
+    overflow-wrap: break-word;
+  
+  }
+  
+  .reviews {
+    border: 2px double var(--darkgray);
+    overflow-wrap: break-word;
+    border-radius: 8px;
+    background-color: var(--gray);
+    max-width: 200px;
+  }
+  
+  .reviewContent {
+    padding: 2% 6%;
+    text-align: center;
+  }
+  
+  .reviewer {
+    text-align: right;
+    padding-right: 6%;
+    font-size: 14pt;
+  }
+  
+  .testimonials {
+    padding: 3% 15%;
+    background-color: var(--green);
+  }
+  
+  .imgContainer {
+    max-width: 200px;
+  
+
+
+
+.userPic {
+    width: 100%;
+    height: auto;
+  
+  
+
+
+
+
+
+    <article className="card">
+    <Image
+      className="cardImage w-full"
+      src={Bruchetta}
+      alt="Bruschetta" 
+    />
+    <div className="cardContent">
+      <h4 className="cardTitle text-center">Bruschetta</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <button className="mt-4"> Order for Delivery</button>
+    </div>
+  </article> 
+  <article className="card">
+          <Image
+            className="cardImage w-full"
+            src={LemonDessert}
+            alt="Lemon Dessert"
+          />
+          <div className="cardContent">
+            <h4 className="cardTitle text-center max-w-84">Lemon Dessert</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button className="mt-4"> Order for Delivery</button>
+          </div>
+        </article>
+        <article className="card">
+          <Image
+            className="cardImage w-full"
+            src={GreekSalad}
+            alt="Greek Salad"
+          />
+          <div className="cardContent">
+            <h4 className="cardTitle text-center max-w-84">Greek Salad</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button className="mt-4"> Order for Delivery</button>
+          </div>
+        </article>
