@@ -5,6 +5,7 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { cn } from "@/lib/utils";
 import { format } from "date-fns";
+import { CalendarIcon } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
 import { Calendar } from "@/components/ui/calendar";
 import { Textarea } from "@/components/ui/textarea";
@@ -40,7 +41,7 @@ const formSchema = z.object({
     required_error: "Please let us know how many to expect",
   }),
   date: z.date({ required_error: "Date is required" }),
-  occasion: z.string({ required_error: "Please select an occasion" }).email,
+  occasion: z.string({ required_error: "Please select an occasion" }),
   seatingpref: z.string({
     required_error: "Please select a seating preference",
   }),
@@ -51,19 +52,15 @@ const formSchema = z.object({
 
 export default function Reservations() {
   // 1. Define your form.
-  const form =
-    useForm <
-    z.infer <
-    typeof formSchema >>
-      {
-        resolver: zodResolver(formSchema),
-        defaultValues: {
-          firstname: "",
-          lastname: "",
-          email: "",
-          numofguests: "",
-        },
-      };
+  const form = useForm({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+        firstname: "",
+        lastname: "",
+        email: "",
+        numofguests: "",
+    },
+});
 
   // 2. Define form action
 
@@ -82,7 +79,8 @@ export default function Reservations() {
         <h1 className="subtitle text-white">Make A Reservation</h1>
         <h2 className="lead">We can't wait to see you!</h2>
       </section>
-      <section className="reservationform text-center justify-center">
+      <div className="formreg">
+      <section className="reservationform text-center">
         <Form {...form}>
           <form onSubmit={onSubmit}>
             <FormField
@@ -92,7 +90,7 @@ export default function Reservations() {
                 <FormItem>
                   <FormLabel>First Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="First Name" {...field} />
+                    <Input placeholder="First Name" {...field}/>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -136,8 +134,8 @@ export default function Reservations() {
                         <Button
                           variant={"outline"}
                           className={cn(
-                            "w-[240px] pl-3 text-left font-normal",
-                            !field.value && text - muted - foreground,
+                            " pl-3 text-left font-normal",
+                            !field.value &&  "text-muted-foreground",
                           )}
                         >
                           {field.value ? (
@@ -248,10 +246,11 @@ export default function Reservations() {
               )}
             />
 
-            <Button type="submit">Submit</Button>
+            <Button type="submit" id="submit">Submit</Button>
           </form>
         </Form>
       </section>
+      </div>
     </main>
   );
 }

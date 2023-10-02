@@ -268,3 +268,20 @@ button {
   background-color: var(--green);
   color: var(--yellow)
 }
+
+.reservationform {
+  margin: 2% auto;
+  padding: 4%;
+  border: 2px double var(--darkgray);
+  border-radius: 16px;
+  width: 30%;
+  min-width: 280px;
+}
+
+#submit {
+  background-color: var(--yellow);
+  color: var(--green);
+  border-radius: 16px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
