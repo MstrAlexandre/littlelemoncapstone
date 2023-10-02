@@ -227,32 +227,11 @@ button {
   padding: 10% 2%;
 }
 
-.pictureBox {
-  position: relative;
-  border: 1px solid black;
-  height: auto;
-}
-
 .chefPics {
   padding: 2%;
-  position: relative;
-  min-height: 600px;
 }
 
-#front {
-  z-index: 0;
-  padding-left: 45%;
-  position: relative;
-  top: 0;
-  left: 0;
-}
 
-#back {
-  z-index: -1;
-  padding-right: 25%;
-  position: relative;
-  bottom: 0;
-}
 
 #lemon {
   max-height: 165px;
@@ -284,4 +263,31 @@ button {
   border-radius: 16px;
   margin-top: 6%;
   margin-bottom: 6%;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 0 10%;
+  }
+
+  .heroContent {
+    max-width: 100%;
+  }
+
+  .highlights {
+    padding: 4% 10%;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .aboutText {
+    max-width: 100%;
+  }
+
+  .reservationform {
+    width: 90%;
+  }
 }

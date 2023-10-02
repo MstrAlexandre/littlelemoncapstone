@@ -3,9 +3,7 @@ import Bruchetta from "public/bruchetta.svg";
 import Macaroni from "public/macaroni.jpg";
 import LemonDessert from "public/lemon dessert.jpg";
 import GreekSalad from "public/greek salad.jpg";
-import UserPic from "public/user.svg";
-import ChefFront from "public/chefFront.jpg";
-import ChefBack from "public/restaurant chef B.jpg";
+import Chefs from "public/Mario and Adrian A.jpg";
 import U1 from "public/2.jpeg";
 import U2 from "public/28.jpeg";
 import U3 from "public/34.jpeg";
@@ -16,7 +14,6 @@ import U6 from "public/92.jpeg";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -114,21 +111,21 @@ export default function Home() {
           <div className="imgContainer">
             <Image src={U1} alt="User Pic" className="userPic" />
           </div>
-          <h5 className="reviewContent  lead"> "Say nice things!" </h5>
+          <h5 className="reviewContent  lead">{"Say nice things!"}</h5>
           <p className="reviewer">-Someone Cool</p>
         </article>
         <article className="reviews">
           <div className="imgContainer">
             <Image src={U5} alt="User Pic" className="userPic" />
           </div>
-          <h5 className="reviewContent lead">"Food is fuel for survival!"</h5>
+          <h5 className="reviewContent lead">{"Food is fuel for survival!"}</h5>
           <p className="reviewer">-Human Being</p>
         </article>
         <article className="reviews">
           <div className="imgContainer">
             <Image src={U4} alt="User Pic" className="userPic" />
           </div>
-          <h5 className="reviewContent lead">"Me likey!"</h5>
+          <h5 className="reviewContent lead">{"Me likey!"}</h5>
           <p className="reviewer">-Adult Person</p>
         </article>
         <article className="reviews">
@@ -136,7 +133,7 @@ export default function Home() {
             <Image src={U3} alt="User Pic" className="userPic" />
           </div>
           <h5 className="reviewContent lead">
-            "When you're here, it's like we're related"
+            {"When you're here, it's like we're related"}
           </h5>
           <p className="reviewer">-Beard Face</p>
         </article>
@@ -145,7 +142,7 @@ export default function Home() {
             <Image src={U2} alt="User Pic" className="userPic" />
           </div>
           <h5 className="reviewContent lead">
-            "Now am become death, destroyer of worlds."
+            {"Now am become death, destroyer of worlds."}
           </h5>
           <p className="reviewer">-Jenny</p>
         </article>
@@ -153,7 +150,7 @@ export default function Home() {
           <div className="imgContainer">
             <Image src={U6} alt="User Pic" className="userPic" />
           </div>
-          <h5 className="reviewContent lead">"Lemonaaddee!!"</h5>
+          <h5 className="reviewContent lead">{"Lemonaaddee!!"}</h5>
           <p className="reviewer">-Fish</p>
         </article>
       </section>
@@ -169,8 +166,7 @@ export default function Home() {
 
         <div>
           <div className="chefPics">
-            <Image src={ChefFront} alt="Mario" id="front"/>
-            <Image src={ChefBack} alt="Luigi" id="back"/>
+            <Image src={Chefs} alt="Our Founders"/>
           </div>
         </div>
       </section>
