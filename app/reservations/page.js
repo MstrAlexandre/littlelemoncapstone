@@ -77,7 +77,7 @@ export default function Reservations() {
     <main>
       <section className="reservationbanner text-center">
         <h1 className="subtitle text-white">Make A Reservation</h1>
-        <h2 className="lead">We can't wait to see you!</h2>
+        <h2 className="lead">We can&apos;t wait to see you!</h2>
       </section>
       <div className="formreg">
       <section className="reservationform text-center">
@@ -205,7 +205,7 @@ export default function Reservations() {
               name="occasion"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>What's the Occasion?</FormLabel>
+                  <FormLabel>Whatn&apos;s the Occasion?</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
