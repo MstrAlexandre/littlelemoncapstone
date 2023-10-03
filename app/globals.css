@@ -227,11 +227,6 @@ button {
   padding: 10% 2%;
 }
 
-.chefPics {
-  padding: 2%;
-}
-
-
 
 #lemon {
   max-height: 165px;
@@ -265,6 +260,32 @@ button {
   margin-bottom: 6%;
 }
 
+
+.chefPics {
+  max-height: 18rem;
+  position: relative;
+  top: 4rem;
+  left: 2rem;
+}
+
+.chefs{
+  width:  60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+# front {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.#back {
+  position: absolute;
+  top: -3.5rem;
+  left: 5rem;
+}
+
 @media only screen and (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -291,3 +312,5 @@ button {
     width: 90%;
   }
 }
+
+

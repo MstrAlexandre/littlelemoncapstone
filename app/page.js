@@ -3,7 +3,8 @@ import Bruchetta from "public/bruchetta.svg";
 import Macaroni from "public/macaroni.jpg";
 import LemonDessert from "public/lemon dessert.jpg";
 import GreekSalad from "public/greek salad.jpg";
-import Chefs from "public/Mario and Adrian A.jpg";
+import PicFront from "public/vegetable_salad.jpg";
+import PicBack from "public/restaurant.jpg";
 import U1 from "public/2.jpeg";
 import U2 from "public/28.jpeg";
 import U3 from "public/34.jpeg";
@@ -165,8 +166,10 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="chefPics">
-            <Image src={Chefs} alt="Our Founders"/>
+          <div className="pl-6">
+            <Image src={PicFront} alt="Our Founders" id="front" className="rounded-md w-9/12 z-10 relative shadow-mdi lg:w-11/12 md:w-full translate-x-[80px] lg:translate-x-[0px] md:translate-y-[70px]
+            md:-translate-x-[100px]  lg:-translate-y-[10px"/>
+            <Image src={PicBack} alt="Our Founders" id="back" className="lg:-translate-x-[180px] md:-translate-x-[200px]  lg:-translate-y-[80px] md:w-full md:translate-y-[30px] -translate-y-[20px] rounded-md lg:w-11/12 w-9/12 relative shadow-md"/>
           </div>
         </div>
       </section>
